@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+* {
+  font-family: "PT Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  color: #292929;
+}
+
+a {
+  text-decoration: none;
+  color: #292929;
+}
+
+ul {
+  list-style: none;
+}
+
+.icons {
+  font-size: 2rem;
+  @media (max-width: 540px) {
+    font-size: 1.3rem;
+  }
+}
+@import "./components/navbar/navbar.scss";
