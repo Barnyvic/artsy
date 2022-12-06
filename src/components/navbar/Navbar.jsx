@@ -17,7 +17,6 @@ function Navbar() {
         </div>
         {click && (
           <div className="navbar-smMenu">
-            <div className="overlay"></div>
             <div className="sm_Contents">
               <div className="smLogo">
                 <h1>ARTSY.</h1>

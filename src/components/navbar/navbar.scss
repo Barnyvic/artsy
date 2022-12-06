@@ -88,10 +88,37 @@ nav {
     @media (max-width: 912px) {
       display: block;
       position: absolute;
-      left: 0%;
-      top: 0%;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      font-size: 1.5rem;
+      line-height: 3.1rem;
+      padding-top: 2.5rem;
+      background: red;
+      animation: animationname 1s ease 0s 1 normal forwards;
+      top: 0;
+      left: 0;
       width: 100%;
-      height: 100vh;
+      height: 60vh;
+      .sm_Contents {
+        .smLogo {
+          display: flex;
+          justify-content: space-between;
+          margin: 0 1.7rem;
+          h1 {
+            font-family: STIX Two Text;
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: 3.3rem;
+          }
+          button {
+            border: none;
+            outline: none;
+            background-color: transparent;
+            margin-bottom: 1.5rem;
+          }
+        }
+      }
     }
   }
   @keyframes animationname {
