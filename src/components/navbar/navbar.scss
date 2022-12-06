@@ -1,6 +1,7 @@
 nav {
   background-color: #ffffff;
-  padding: 0.7rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 0.3rem;
   z-index: 3;
   position: fixed;
   width: 100%;
@@ -29,12 +30,12 @@ nav {
         line-height: 5.5rem;
         @media (max-width: 912px) {
           font-size: 1.7rem;
-          margin-top: 0.5rem;
+          margin-top: 0.7rem;
         }
         @media (max-width: 540px) {
           font-size: 1.3rem;
           margin-left: 2rem;
-          margin-top: 0.5rem;
+          margin-top: 0.7rem;
         }
       }
     }
@@ -60,13 +61,13 @@ nav {
     .navIcons {
       display: flex;
       gap: 1.5rem;
+      margin-bottom: 0.7rem;
       @media (max-width: 1000px) {
         margin-left: 1.3rem;
       }
       @media (max-width: 540px) {
         gap: 1rem;
       }
-      align-self: center;
       button {
         border: none;
         outline: none;
@@ -94,8 +95,8 @@ nav {
       font-size: 1.5rem;
       line-height: 3.1rem;
       padding-top: 2.5rem;
-      background: red;
-      animation: animationname 1s ease 0s 1 normal forwards;
+      background: #ffffff;
+      animation: myAnim 0.9s linear 0s 1 normal forwards;
       top: 0;
       left: 0;
       width: 100%;
@@ -105,6 +106,17 @@ nav {
           display: flex;
           justify-content: space-between;
           margin: 0 1.7rem;
+          &::after {
+            content: "";
+            display: block;
+            position: fixed;
+            top: 75%;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 10;
+            background-color: rgba(0, 0, 0, 0.3);
+          }
           h1 {
             font-family: STIX Two Text;
             font-size: 1.5rem;
@@ -124,12 +136,14 @@ nav {
   @keyframes animationname {
     0% {
       opacity: 0;
-      transform: translateX(-50px);
+      transform: rotateX(-100deg);
+      transform-origin: top;
     }
 
     100% {
       opacity: 1;
-      transform: translateX(0);
+      transform: rotateX(0deg);
+      transform-origin: top;
     }
   }
 }
