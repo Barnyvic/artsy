@@ -5,7 +5,9 @@ function Auction() {
   return (
     <div>
       <Navbar />
-      <h1>Auction</h1>
+      <div className="container mainContainer">
+        <h1>Auction</h1>
+      </div>
     </div>
   );
 }

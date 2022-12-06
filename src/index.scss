@@ -26,4 +26,13 @@ li {
     font-size: 1.3rem;
   }
 }
+
+.mainContainer {
+  margin-top: 7rem;
+}
+
 @import "./components/navbar/navbar.scss";
+@import "/src/styles/Homepage.scss";
+@import "/src/styles/marketplace.scss";
+@import "/src/styles/drop.scss";
+@import "/src/styles/auction.scss";

@@ -5,7 +5,9 @@ function Marketplace() {
   return (
     <div>
       <Navbar />
-      <h1>MarketPlace</h1>
+      <div className="container mainContainer">
+        <h1>MarketPlace</h1>
+      </div>
     </div>
   );
 }

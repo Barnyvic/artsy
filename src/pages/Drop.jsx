@@ -5,7 +5,9 @@ function Drop() {
   return (
     <div>
       <Navbar />
-      <h1>Drops</h1>
+      <div className="container mainContainer">
+        <h1>Drops</h1>
+      </div>
     </div>
   );
 }
