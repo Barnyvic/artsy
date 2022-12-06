@@ -1,9 +1,11 @@
-import Navbar from "./components/navbar/Navbar";
 import HomePage from "./pages/HomePage";
 import Marketplace from "./pages/Marketplace";
 import Auction from "./pages/Auction";
 import Drop from "./pages/Drop";
 import { Route, Routes } from "react-router-dom";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function App() {
   return (

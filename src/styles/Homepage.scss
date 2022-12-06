@@ -1,0 +1,39 @@
+main {
+  padding: 1rem;
+  background: #ffffff;
+  .Home-container-header {
+    h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      line-height: 2.4rem;
+      @media (min-width: 541px) {
+        font-size: 3rem;
+        line-height: 3.8rem;
+      }
+      @media (min-width: 921px) {
+        font-size: 4rem;
+        font-weight: 600;
+        line-height: 4.8rem;
+      }
+      @media (min-width: 1200px) {
+        font-size: 5rem;
+        width: 25ch;
+      }
+    }
+    .header-p {
+      font-size: 1.2rem;
+      font-weight: 500;
+      line-height: 1.7rem;
+      text-align: center;
+      @media (min-width: 1024px) {
+        font-size: 1.7rem;
+        line-height: 2.7rem;
+      }
+      @media (min-width: 1280px) {
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+        width: 69ch;
+      }
+    }
+  }
+}
