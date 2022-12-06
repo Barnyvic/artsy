@@ -4,10 +4,12 @@ import { BsBell } from "react-icons/bs";
 import { BsCart } from "react-icons/bs";
 import { FiMenu } from "react-icons/fi";
 import { GrClose } from "react-icons/gr";
+import { Link, useLocation } from "react-router-dom";
 
 function Navbar() {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
+  const { pathname } = useLocation();
 
   return (
     <nav>
@@ -25,23 +27,54 @@ function Navbar() {
                 </button>
               </div>
               <ul className="navbar-smMenu-list ">
-                <li className="navlist_Items">Home</li>
-                <li className="navlist_Items">Marketplace</li>
-                <li className="navlist_Items">Auctions</li>
-                <li className="navlist_Items">Drop</li>
+                <Link to="/" className={pathname === "/" ? "active" : "link"}>
+                  <li className="navlist_Items" onClick={handleClick}>
+                    Home
+                  </li>
+                </Link>
+                <Link
+                  to="/marketplace"
+                  className={pathname === "/marketplace" ? "active" : "link"}
+                >
+                  <li className="navlist_Items" onClick={handleClick}>
+                    Marketplace
+                  </li>
+                </Link>
+                <Link
+                  to="/auction"
+                  className={pathname === "/auction" ? "active" : "link"}
+                >
+                  <li className="navlist_Items" onClick={handleClick}>
+                    Auctions
+                  </li>
+                </Link>
+                <Link
+                  to="/drop"
+                  className={pathname === "/drop" ? "active" : "link"}
+                >
+                  <li className="navlist_Items" onClick={handleClick}>
+                    Drop
+                  </li>
+                </Link>
               </ul>
             </div>
           </div>
         )}
         <div className="logo">
-          <h1>ARTSY.</h1>
+          <a href="/" className="header-link">
+            <h1>ARTSY.</h1>
+          </a>
         </div>
-        <ul className="navlist_Container">
-          <li className="navlist_Items">Home</li>
-          <li className="navlist_Items">Marketplace</li>
-          <li className="navlist_Items">Auctions</li>
-          <li className="navlist_Items">Drop</li>
-        </ul>
+        {NavItems.map((items) => (
+          <div className="navlist_Container" key={items.id}>
+            <Link
+              to={items.path}
+              className={pathname === items.path ? "active" : "link"}
+            >
+              <li className="navlist_Items">{items.text}</li>
+            </Link>
+          </div>
+        ))}
 
         <div className="navIcons">
           <button>
@@ -60,3 +93,26 @@ function Navbar() {
 }
 
 export default Navbar;
+
+const NavItems = [
+  {
+    id: 1,
+    text: "Home",
+    path: "/",
+  },
+  {
+    id: 2,
+    text: "Marketplace",
+    path: "/marketplace",
+  },
+  {
+    id: 3,
+    text: "Auctions",
+    path: "/auction",
+  },
+  {
+    id: 4,
+    text: "Drop",
+    path: "/drop",
+  },
+];
