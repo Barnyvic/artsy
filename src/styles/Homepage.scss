@@ -47,5 +47,32 @@ main {
         line-height: 4rem;
       }
     }
+    .feature-Content-Maincontainer {
+      .feature-Content-container {
+        border-top: 1px solid #333333;
+        padding-block: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        .feature-contents {
+          align-self: flex-start;
+          h3 {
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 50px;
+          }
+          p {
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+          }
+          .feature-contents-footer {
+            display: flex;
+            flex-direction: row;
+          }
+        }
+      }
+    }
   }
 }

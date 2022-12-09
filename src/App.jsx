@@ -5,6 +5,7 @@ import Drop from "./pages/Drop";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
 import { AnimatePresence } from "framer-motion";
+import "rsuite/dist/rsuite.min.css";
 
 function App() {
   const location = useLocation();
