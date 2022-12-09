@@ -36,4 +36,16 @@ main {
       }
     }
   }
+  .Home-container-body {
+    margin-top: -4rem;
+    h2 {
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 3rem;
+      @media (min-width: 768px) {
+        font-size: 3rem;
+        line-height: 4rem;
+      }
+    }
+  }
 }

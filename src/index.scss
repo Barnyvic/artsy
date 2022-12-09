@@ -31,6 +31,30 @@ li {
   margin-top: 7rem;
 }
 
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.slider-Container {
+  display: flex;
+  overflow-x: scroll;
+  align-items: center;
+  width: 100%;
+  cursor: grab;
+  padding: 20px 0;
+  .card {
+    flex-shrink: 0;
+    margin-left: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .card3 {
+    align-self: flex-start;
+    margin-bottom: 4rem;
+  }
+}
+
 @import "./components/navbar/navbar.scss";
 @import "/src/styles/Homepage.scss";
 @import "/src/styles/marketplace.scss";

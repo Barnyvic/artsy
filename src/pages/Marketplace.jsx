@@ -1,14 +1,17 @@
 import React from "react";
-import Navbar from "../components/navbar/Navbar";
+import { motion } from "framer-motion";
 
 function Marketplace() {
   return (
-    <div>
-      <Navbar />
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <div className="container mainContainer">
         <h1>MarketPlace</h1>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

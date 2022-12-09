@@ -1,22 +1,66 @@
 import React from "react";
-import Slider from "react-slick";
 import sliderImg1 from "../../images/Rectangle 230.png";
 import sliderImg2 from "../../images/Rectangle 231.png";
 import sliderImg3 from "../../images/Rectangle 232.png";
 import sliderImg4 from "../../images/Rectangle 233.png";
 import sliderImg5 from "../../images/Rectangle 234.png";
+import sliderImg6 from "../../images/Rectangle 254.png";
+import { motion } from "framer-motion";
 
 function SliderComponet() {
   return (
-    <div>
-      <Slider {...settings}>
-        {SliderItems.map((sliders) => (
-          <div key={sliders.id} className="slider-Container d-flex gap-3">
-            <img src={sliders.img} alt="" className="img-fluid " />
-          </div>
-        ))}
-      </Slider>
-    </div>
+    <motion.div className="my-5">
+      <div className="slider-Container">
+        <motion.img
+          src={sliderImg1}
+          whileHover={{ scale: 1.2 }}
+          transition={{ duration: 2, type: "spring", stiffness: 60 }}
+          whileTap={{ scale: 2 }}
+          alt="a boy on glasses"
+          className="img-fluid card"
+        />
+        <motion.img
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 2 }}
+          transition={{ duration: 2, type: "spring", stiffness: 60 }}
+          src={sliderImg2}
+          alt="a hand holding leaf"
+          className="img-fluid card"
+        />
+        <motion.img
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 2 }}
+          transition={{ duration: 2, type: "spring", stiffness: 60 }}
+          src={sliderImg3}
+          alt="a girl starring"
+          className="img-fluid card card3"
+        />
+        <motion.img
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 2 }}
+          transition={{ duration: 2, type: "spring", stiffness: 60 }}
+          src={sliderImg4}
+          alt="a kangarrow"
+          className="img-fluid card"
+        />
+        <motion.img
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 2 }}
+          transition={{ duration: 2, type: "spring", stiffness: 60 }}
+          src={sliderImg5}
+          alt=" a handing holding fruit"
+          className="img-fluid card"
+        />
+        <motion.img
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 2 }}
+          transition={{ duration: 2, type: "spring", stiffness: 60 }}
+          src={sliderImg6}
+          alt="two girls"
+          className="img-fluid card"
+        />
+      </div>
+    </motion.div>
   );
 }
 
