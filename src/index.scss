@@ -26,6 +26,11 @@ li {
     font-size: 1.3rem;
   }
 }
+.avatarImgs {
+  @media (max-width: 1024px) {
+    width: 40%;
+  }
+}
 
 .mainContainer {
   margin-top: 7rem;

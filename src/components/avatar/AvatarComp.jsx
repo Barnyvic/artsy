@@ -17,7 +17,13 @@ const AvatarComp = () => (
   <>
     <AvatarGroup stack>
       {users.map((user) => (
-        <Avatar circle key={user.name} src={user.avatar} alt={user.name} />
+        <Avatar
+          circle
+          key={user.name}
+          className="img-fluid avatarImgs"
+          src={user.avatar}
+          alt={user.name}
+        />
       ))}
     </AvatarGroup>
   </>

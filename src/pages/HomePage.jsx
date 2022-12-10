@@ -1,7 +1,7 @@
 import React from "react";
 import SliderComponet from "../components/navbar/sliderComponet";
 import { motion } from "framer-motion";
-import featureIMg1 from "../images/egypt.png";
+import featureIMg1 from "../images/Rectangle 299.png";
 import featureIMg2 from "../images/Rectangle 2990.png";
 import featureIMg3 from "../images/Rectangle 29.png";
 import { BsArrowRightCircle } from "react-icons/bs";
@@ -37,7 +37,11 @@ function HomePage() {
               <div className="feature-Content-Maincontainer">
                 {featureContents.map((items) => (
                   <div className="feature-Content-container" key={items.id}>
-                    <img src={items.img} className="img-fluid" alt="images" />
+                    <img
+                      src={items.img}
+                      className="img-fluid Img1"
+                      alt="images"
+                    />
                     <div className="feature-contents">
                       <h3 className="mb-4">{items.header}</h3>
                       <p className="mb-5">{items.para}</p>
@@ -45,7 +49,47 @@ function HomePage() {
                         <AvatarComp />
                         <p>{items.footer}</p>
                         <button>
-                          <BsArrowRightCircle />
+                          <BsArrowRightCircle className="icons arrow-icon" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+                {featureContents2.map((items) => (
+                  <div className="feature-Content-container" key={items.id}>
+                    <div className="feature-contents">
+                      <h3 className="mb-4">{items.header}</h3>
+                      <p className="mb-5">{items.para}</p>
+                      <div className="feature-contents-footer">
+                        <AvatarComp />
+                        <p>{items.footer}</p>
+                        <button>
+                          <BsArrowRightCircle className="icons arrow-icon" />
+                        </button>
+                      </div>
+                    </div>
+                    <img
+                      src={items.img}
+                      className="img-fluid Img1"
+                      alt="images"
+                    />
+                  </div>
+                ))}
+                {featureContents3.map((items) => (
+                  <div className="feature-Content-container" key={items.id}>
+                    <img
+                      src={items.img}
+                      className="img-fluid Img1"
+                      alt="images"
+                    />
+                    <div className="feature-contents">
+                      <h3 className="mb-4">{items.header}</h3>
+                      <p className="mb-5">{items.para}</p>
+                      <div className="feature-contents-footer">
+                        <AvatarComp />
+                        <p>{items.footer}</p>
+                        <button>
+                          <BsArrowRightCircle className="icons arrow-icon" />
                         </button>
                       </div>
                     </div>
@@ -70,18 +114,24 @@ const featureContents = [
     para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor pur",
     footer: "64 major creators",
   },
-  // {
-  //   id: 2,
-  //   img: featureIMg3,
-  //   header: "The Boolean Egyptian",
-  //   para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor pur",
-  //   footer: "64 major creators",
-  // },
-  // {
-  //   id: 3,
-  //   img: featureIMg1,
-  //   header: "The Boolean Egyptian",
-  //   para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor pur",
-  //   footer: "64 major creators",
-  // },
+];
+
+const featureContents2 = [
+  {
+    id: 2,
+    img: featureIMg3,
+    header: "Are We There Yet?",
+    para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor pur",
+    footer: "64 major creators",
+  },
+];
+
+const featureContents3 = [
+  {
+    id: 3,
+    img: featureIMg1,
+    header: "Oloibiri 1997",
+    para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor pur",
+    footer: "64 major creators",
+  },
 ];
