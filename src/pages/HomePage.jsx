@@ -110,12 +110,12 @@ function HomePage() {
               <div className="auctionContents">
                 <h2>01</h2>
                 <div className="monday">
-                  <span>Start on : 08:00 GTS . Monday</span>
+                  {/* <span>Start on : 08:00 GTS . Monday</span>
                   <p>
                     GET EXCLUSIVE VIEWING OF CONTEMPORARY ART AND CONNECT WITH
                     INVESTORS AND AUCTIONEERS ACROSS THE WORLD BRINGING THEIR
                     HIGHEST AND LOWEST BIDS.
-                  </p>
+                  </p> */}
                 </div>
                 <div className="seeMore">
                   <p>See more</p>
