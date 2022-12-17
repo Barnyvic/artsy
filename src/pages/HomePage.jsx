@@ -153,6 +153,38 @@ function HomePage() {
             </div>
           </div>
         </div>
+        <div className="top-Creator-MainContainer p-3">
+          <div className="container top-creator_container p-2">
+            <div className="topcreator d-flex align-items-center justify-content-between">
+              <p className=" h2">TOP CREATORS OF THE WEEK</p>
+              <div className="fillColor">
+                <div className="fill">
+                  <div className="color"></div>
+                </div>
+                <ul>
+                  <li>Editorials</li>
+                  <li>Fashion</li>
+                  <li>Lifestyle</li>
+                  <li>Blueprint</li>
+                </ul>
+              </div>
+            </div>
+            <div className="topcreatorContent2 py-3">
+              <p>
+                “Everything always looked better in black and white. Everything
+                always as if it were the first time; there’s always more people
+                in a black and white photograph. It just makes it seem that
+                there were more people at a gig, more people at a football
+                match, than with colour photography. Everything looks more
+                exciting.”– Jack Lowden
+              </p>
+            </div>
+            <div className="topCreatorContent3">
+              <p></p>
+              <p className="year1">1985</p>
+            </div>
+          </div>
+        </div>
       </motion.div>
     </motion.div>
   );
