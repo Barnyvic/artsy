@@ -5,6 +5,10 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  // color: #292929;
+}
+
+body {
   color: #292929;
 }
 
@@ -63,6 +67,37 @@ li {
     align-self: flex-start;
     margin-bottom: 4rem;
   }
+}
+.link2 {
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 4rem;
+  @media (max-width: 540px) {
+    font-size: 2rem;
+  }
+  @media (max-width: 450px) {
+    font-size: 1.5rem;
+  }
+}
+.icon2 {
+  color: #4693ed;
+  font-size: 3rem;
+  @media (max-width: 450px) {
+    font-size: 2rem;
+  }
+}
+.ic3 {
+  margin-left: 9rem;
+  @media (max-width: 450px) {
+    margin-left: 6rem;
+  }
+}
+.border1 {
+  border-bottom: 1px solid #333333;
+  border-top: 1px solid #333333;
+}
+.border2 {
+  border-bottom: 1px solid #333333;
 }
 
 @import "./components/navbar/navbar.scss";

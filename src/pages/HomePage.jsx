@@ -6,6 +6,8 @@ import featureIMg2 from "../images/Rectangle 2990.png";
 import featureIMg3 from "../images/Rectangle 29.png";
 import { BsArrowRightCircle } from "react-icons/bs";
 import AvatarComp from "../components/avatar/AvatarComp";
+import { Link } from "react-router-dom";
+import { AiOutlineArrowRight } from "react-icons/ai";
 
 function HomePage() {
   return (
@@ -126,6 +128,28 @@ function HomePage() {
                   <button>Set a reminder</button>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        <div className="explore-Market-Container">
+          <div className="container py-5">
+            <div className="explore text-center border1">
+              <Link
+                to={"/marketplace"}
+                className="d-flex align-items-center justify-content-evenly text-decoration-none py-2 text-dark"
+              >
+                <p className="link2">Explore marketplace</p>
+                <AiOutlineArrowRight className="icons icon2" />
+              </Link>
+            </div>
+            <div className="explore text-center border2">
+              <Link
+                to={"/auction"}
+                className="d-flex align-items-center justify-content-evenly text-decoration-none py-2 text-dark"
+              >
+                <p className="link2 ">See auctions </p>
+                <AiOutlineArrowRight className="icons icon2 ic3" />
+              </Link>
             </div>
           </div>
         </div>

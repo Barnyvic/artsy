@@ -28,7 +28,10 @@ function Navbar() {
               </div>
               <ul className="navbar-smMenu-list ">
                 <Link to="/" className={pathname === "/" ? "active" : "link"}>
-                  <li className="navlist_Items" onClick={handleClick}>
+                  <li
+                    className="navlist_Items text-black"
+                    onClick={handleClick}
+                  >
                     Home
                   </li>
                 </Link>
@@ -36,7 +39,10 @@ function Navbar() {
                   to="/marketplace"
                   className={pathname === "/marketplace" ? "active" : "link"}
                 >
-                  <li className="navlist_Items" onClick={handleClick}>
+                  <li
+                    className="navlist_Items text-black"
+                    onClick={handleClick}
+                  >
                     Marketplace
                   </li>
                 </Link>
@@ -44,7 +50,10 @@ function Navbar() {
                   to="/auction"
                   className={pathname === "/auction" ? "active" : "link"}
                 >
-                  <li className="navlist_Items" onClick={handleClick}>
+                  <li
+                    className="navlist_Items text-black"
+                    onClick={handleClick}
+                  >
                     Auctions
                   </li>
                 </Link>
@@ -52,7 +61,10 @@ function Navbar() {
                   to="/drop"
                   className={pathname === "/drop" ? "active" : "link"}
                 >
-                  <li className="navlist_Items" onClick={handleClick}>
+                  <li
+                    className="navlist_Items text-black"
+                    onClick={handleClick}
+                  >
                     Drop
                   </li>
                 </Link>
@@ -71,7 +83,7 @@ function Navbar() {
               to={items.path}
               className={pathname === items.path ? "active" : "link"}
             >
-              <li className="navlist_Items">{items.text}</li>
+              <li className="navlist_Items text-black">{items.text}</li>
             </Link>
           </div>
         ))}
