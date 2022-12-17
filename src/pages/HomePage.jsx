@@ -8,6 +8,7 @@ import { BsArrowRightCircle } from "react-icons/bs";
 import AvatarComp from "../components/avatar/AvatarComp";
 import { Link } from "react-router-dom";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import GirlImage from "../images/agirl.png";
 
 function HomePage() {
   return (
@@ -182,6 +183,13 @@ function HomePage() {
             <div className="topCreatorContent3">
               <p></p>
               <p className="year1">1985</p>
+            </div>
+            <div className="topcreator-Img img-fluid">
+              <img
+                src={GirlImage}
+                alt="a girl looking "
+                className=" img-fluid"
+              />
             </div>
           </div>
         </div>

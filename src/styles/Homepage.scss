@@ -291,6 +291,17 @@ main {
 .top-Creator-MainContainer {
   background: #e2e2e2;
   .top-creator_container {
+    position: relative;
+    .topcreator-Img {
+      @media (max-width: 990px) {
+        display: none;
+      }
+      img {
+        position: absolute;
+        top: 0%;
+        left: 20%;
+      }
+    }
     .topcreator {
       p {
         font-size: 3rem;
