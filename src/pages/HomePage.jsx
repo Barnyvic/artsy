@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import SliderComponet from "../components/navbar/sliderComponet";
 import { motion } from "framer-motion";
 import featureIMg1 from "../images/Rectangle 299.png";
@@ -11,6 +11,12 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import GirlImage from "../images/agirl.png";
 
 function HomePage() {
+  const [text, setText] = useState("");
+
+  const handleChange = (e) => {
+    setText(e.target.value);
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -206,6 +212,8 @@ function HomePage() {
                     type="email"
                     className="form-control"
                     placeholder="Enter your Email"
+                    value={text}
+                    onChange={handleChange}
                   />
                   <button type="submit" className="btn btn-dark py-2 px-4">
                     Subscribe

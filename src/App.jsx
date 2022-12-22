@@ -6,6 +6,7 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
 import { AnimatePresence } from "framer-motion";
 import "rsuite/dist/rsuite.min.css";
+import Footer from "./components/footer/Footer";
 
 function App() {
   const location = useLocation();
@@ -21,6 +22,7 @@ function App() {
           <Route path="/drop" element={<Drop />} />
         </Routes>
       </AnimatePresence>
+      <Footer />
     </div>
   );
 }
