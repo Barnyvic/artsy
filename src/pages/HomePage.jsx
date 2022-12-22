@@ -9,6 +9,10 @@ import AvatarComp from "../components/avatar/AvatarComp";
 import { Link } from "react-router-dom";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import GirlImage from "../images/agirl.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
 
 function HomePage() {
   const [text, setText] = useState("");
@@ -27,10 +31,20 @@ function HomePage() {
         <div className="container mainContainer">
           <main className="Home-cotainer">
             <div className="Home-container-header">
-              <h1 className="text-center">
+              <h1
+                className="text-center"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+                data-aos-delay="700"
+              >
                 Photography is poetry & beautiful untold stories
               </h1>
-              <p className="text-center header-p mt-4">
+              <p
+                className="text-center header-p mt-4"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+                data-aos-delay="1000"
+              >
                 Flip through more than 10,000 vintage shots, old photograghs,
                 historic images and captures seamlessly in one place. Register
                 to get top access.
@@ -43,9 +57,15 @@ function HomePage() {
           <main className="Home-cotainer">
             <div className="Home-container-body">
               <h2 className="mb-4">Featured products</h2>
-              <div className="feature-Content-Maincontainer">
+              <motion.div className="feature-Content-Maincontainer">
                 {featureContents.map((items) => (
-                  <div className="feature-Content-container" key={items.id}>
+                  <div
+                    className="feature-Content-container"
+                    key={items.id}
+                    data-aos="fade-up"
+                    data-aos-duration="3000"
+                    data-aos-delay="2000"
+                  >
                     <img
                       src={items.img}
                       className="img-fluid Img1"
@@ -65,7 +85,13 @@ function HomePage() {
                   </div>
                 ))}
                 {featureContents2.map((items) => (
-                  <div className="feature-Content-container" key={items.id}>
+                  <div
+                    className="feature-Content-container"
+                    key={items.id}
+                    data-aos="fade-up"
+                    data-aos-duration="3000"
+                    data-aos-delay="2000"
+                  >
                     <div className="feature-contents">
                       <h3 className="mb-4">{items.header}</h3>
                       <p className="mb-5">{items.para}</p>
@@ -85,7 +111,13 @@ function HomePage() {
                   </div>
                 ))}
                 {featureContents3.map((items) => (
-                  <div className="feature-Content-container" key={items.id}>
+                  <div
+                    className="feature-Content-container"
+                    key={items.id}
+                    data-aos="fade-up"
+                    data-aos-duration="3000"
+                    data-aos-delay="2000"
+                  >
                     <img
                       src={items.img}
                       className="img-fluid Img1"
@@ -104,7 +136,7 @@ function HomePage() {
                     </div>
                   </div>
                 ))}
-              </div>
+              </motion.div>
             </div>
           </main>
         </div>
@@ -114,7 +146,12 @@ function HomePage() {
               See Upcoming Auctions and Exhibitions
             </h1>
             <hr className="Rule" />
-            <div className="home-auction-content">
+            <div
+              className="home-auction-content"
+              data-aos="zoom-in"
+              data-aos-duration="3000"
+              data-aos-delay="2000"
+            >
               <ul className="auction-list">
                 <li>MONALISA REDEFINED IN STYLE.</li>
               </ul>
@@ -201,7 +238,12 @@ function HomePage() {
         </div>
         <div className="NewsLettter">
           <div className="container p-1">
-            <div className=" border border-dark p-5">
+            <div
+              className=" border border-dark p-5"
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+              data-aos-delay="2000"
+            >
               <p className=" text-center h1">NewsLetter</p>
               <p className="text-center h5">
                 Subscribe to get daily updates on new drops & exciting deals
