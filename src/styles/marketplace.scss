@@ -1,0 +1,15 @@
+.Marketplace-Container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .filterContainer {
+    display: none;
+    @media (min-width: 768px) {
+      display: block;
+      flex: 1;
+    }
+  }
+  .MarketplaceContainer {
+    flex: 4;
+  }
+}
