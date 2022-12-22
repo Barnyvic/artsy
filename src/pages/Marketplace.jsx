@@ -16,6 +16,11 @@ function Marketplace() {
           </div>
           <div className="MarketplaceContainer p-2">
             <MarketItems />
+            <div className="seeMore text-center">
+              <button className="btn  btn-light text-dark px-5 py-3 border border-dark mt-5">
+                see more
+              </button>
+            </div>
           </div>
         </div>
       </div>
