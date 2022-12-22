@@ -193,6 +193,28 @@ function HomePage() {
             </div>
           </div>
         </div>
+        <div className="NewsLettter">
+          <div className="container p-1">
+            <div className=" border border-dark p-5">
+              <p className=" text-center h1">NewsLetter</p>
+              <p className="text-center h5">
+                Subscribe to get daily updates on new drops & exciting deals
+              </p>
+              <form>
+                <div className="form-group text-center d-md-flex justify-content-center align-items-center gap-4 mt-3">
+                  <input
+                    type="email"
+                    className="form-control"
+                    placeholder="Enter your Email"
+                  />
+                  <button type="submit" className="btn btn-dark py-2 px-4">
+                    Subscribe
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
       </motion.div>
     </motion.div>
   );

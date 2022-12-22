@@ -299,7 +299,12 @@ main {
       img {
         position: absolute;
         top: 0%;
-        left: 20%;
+        left: 30%;
+        width: 50%;
+        @media (max-width: 1280px) {
+          left: 25%;
+          width: 60%;
+        }
       }
     }
     .topcreator {
@@ -387,6 +392,19 @@ main {
         font-weight: 700;
         line-height: 16.5rem;
       }
+    }
+  }
+}
+.NewsLettter {
+  padding: 1rem;
+  @media (min-width: 768px) {
+    padding: 3.5rem;
+  }
+  input {
+    width: 30%;
+    @media (max-width: 540px) {
+      width: 100%;
+      margin-bottom: 0.8rem;
     }
   }
 }
