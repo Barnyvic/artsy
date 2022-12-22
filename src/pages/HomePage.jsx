@@ -213,7 +213,11 @@ function HomePage() {
                 </ul>
               </div>
             </div>
-            <div className="topcreatorContent2 py-3">
+            <div
+              className="topcreatorContent2 py-3"
+              data-aos="zoom-in-down"
+              data-aos-delay="2000"
+            >
               <p>
                 “Everything always looked better in black and white. Everything
                 always as if it were the first time; there’s always more people
