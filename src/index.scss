@@ -99,6 +99,9 @@ li {
 .border2 {
   border-bottom: 1px solid #333333;
 }
+.border3 {
+  border-bottom: 3px solid #333333;
+}
 
 @import "./components/navbar/navbar.scss";
 @import "/src/styles/Homepage.scss";

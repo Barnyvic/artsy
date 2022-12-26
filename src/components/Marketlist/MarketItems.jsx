@@ -1,5 +1,4 @@
 import React from "react";
-import { marketPlaceItems } from "../../constant/data";
 import { motion } from "framer-motion";
 import classes from "./marketlist.module.scss";
 import AOS from "aos";
@@ -7,10 +6,10 @@ import "aos/dist/aos.css";
 
 AOS.init();
 
-function MarketItems() {
+function MarketItems({ nofilteredItems }) {
   return (
     <div className={classes.Market_list_Container}>
-      {marketPlaceItems.map((items) => (
+      {nofilteredItems.map((items) => (
         <motion.div
           whileHover={{ scale: 1.2 }}
           transition={{ duration: 2, type: "spring", stiffness: 60 }}
